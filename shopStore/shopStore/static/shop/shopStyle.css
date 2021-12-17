@@ -7,7 +7,33 @@
 }
 
 .card {
-    height: 305px;
+  overflow: hidden;
+}
+
+.card img {
+  height: 166px;
+}
+
+.card-body {
+  display: grid;
+  grid-template: 20px 1fr 30px/1fr;
+  gap: 15px;
+  padding-top: 30px;
+}
+
+.my-card-title {
+  font-family: "Helvetica";
+  font-weight: 600;
+  font-size: 20px;
+  cursor: default;
+}
+.my-card-title:hover{
+  color: blue;
+}
+
+.my-card-text {
+  font-family: sans-serif;
+  font-size: 16px;
 }
 
 .card-title:hover {
@@ -103,3 +129,46 @@
   height: 30px;
   transition: width 0.35s;
 }
+
+
+
+.price .price__small {
+  text-decoration: line-through;
+  font-size: 11px;
+}
+.price .price__big {
+  font-size: 20px;
+  margin-left: 12px;
+  color: rgb(233, 18, 18);
+}
+.price .price__normal {
+  font-size: 16px;
+}
+
+
+
+/* ----- Filter-Sort Buttons ----- */
+
+.sort-filter-buttons .navbar-nav{
+  font-family: 'FontAwesome';
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+}
+
+.sort-filter-buttons .filter{
+  margin-left: 15px;
+}
+
+.sort-filter-buttons .nav-link {
+  color: rgb(94, 86, 86);
+  margin-bottom: 20px;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.sort-filter-buttons .sort {
+  margin-left: 15px;
+}
+
+/* ----- Filter-Sort Buttons ----- */

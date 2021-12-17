@@ -77,6 +77,10 @@ h6 {
 
 /* ------------------------------------------------------------------------ */
 
+body {
+  background-color: rgb(180, 194, 207);
+}
+
 .main-container {
   display: grid;
   grid-template: 52px 1fr 100px/1fr;

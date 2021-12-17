@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">ProductShop</a>
+    <a class="navbar-brand" href="{% url 'main:index' %}">ProductShop</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -29,6 +29,12 @@
       </ul>
     </div>
     <ul class="navbar-nav mb-2 mb-lg-0 ms-auto my-icons">
+      <li class="nav-item">
+        <form class="d-flex" id="search-field">
+          <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </li>
       <li class="nav-item">
         <a href="#" class="nav-link"><i class="fa-regular fa-user fa-x"></i></a>
       </li>

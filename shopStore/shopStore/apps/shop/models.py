@@ -10,6 +10,7 @@ class Employee(models.Model):
     second_name = models.CharField(max_length=40, blank=True, null=True)
     post = models.CharField(max_length=40, blank=True, null=True)
     workplace = models.ForeignKey('Shop', models.DO_NOTHING, db_column='workplace', blank=True, null=True)
+    salary = models.IntegerField(blank=True, default=15000)
 
     class Meta:
         managed = True
@@ -21,6 +22,8 @@ class Item(models.Model):
     category = models.CharField(max_length=100, blank=True, null=True)
     name = models.CharField(max_length=100, blank=True, null=True)
     price = models.DecimalField(max_digits=7, decimal_places=2, blank=True, null=True)
+    prev_price = models.DecimalField(max_digits=7, decimal_places=2, blank=True, null=True)
+    item_image = models.CharField(max_length=250, blank=True, null=True)
 
     class Meta:
         managed = True
@@ -31,6 +34,11 @@ class ItemShop(models.Model):
     id = models.AutoField(db_column='_id', primary_key=True)
     item = models.ForeignKey(Item, on_delete=models.CASCADE, blank=True, null=True)
     shop = models.ForeignKey('Shop', on_delete=models.CASCADE, blank=True, null=True)
+    amount = models.IntegerField(default=0)
+
+    def getShopAddress(self):
+        # return Shop.objects.get(id=self.shop)
+        return self.shop.address
 
     class Meta:
         managed = True
