@@ -23,6 +23,7 @@
 }
 .my-icons .nav-item {
   margin-right: 10px;
+  align-self: center;
 }
 
 .top-menu li a::after {
