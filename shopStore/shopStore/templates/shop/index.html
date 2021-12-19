@@ -11,6 +11,7 @@
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
 <!-- <script src="{% static 'shop/js/scripts.js' %}"></script> -->
 <script src="{% static 'shop/getItemsFromDB.js' %}"></script>
+<script src="{% static 'shop/js/myScript.js' %}"></script>
 {% endblock %}
 
 {% block content %}
@@ -19,7 +20,7 @@
     <div class="sort-filter-buttons">
         <ul class="navbar-nav">
             <li class="nav-item dropdown filter">
-                <a href="#" class="nav-link dropdown-toggle" id="filterDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="fa-solid fa-filter"></span></a>
+                <a href="#" class="nav-link dropdown-toggle" id="filterDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="fa-solid fa-filter" title='Фильтр'></span></a>
                 <ul class="dropdown-menu" aria-labelledby="filterDropdown">
                     <li><a href="#" class="dropdown-item" data-category="vegatables">Овощи</a></li>
                     <li><a href="#" class="dropdown-item" data-category="fruit">Фрукты</a></li>
@@ -28,7 +29,7 @@
                 </ul>
             </li>
             <li class="nav-item dropdown sort">
-                <a href="" class="nav-link dropdown-toggle" id="sortDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="fa-solid fa-sort"></span></a>
+                <a href="" class="nav-link dropdown-toggle" id="sortDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="fa-solid fa-sort" title='Сортировка'></span></a>
                 <ul class="dropdown-menu" aria-labelledby="sortDropdown">
                     <li><a href="#" class="dropdown-item">Цена от меньшей к больше</a></li>
                     <li><a href="#" class="dropdown-item">Цена от большей к меньшей</a></li>

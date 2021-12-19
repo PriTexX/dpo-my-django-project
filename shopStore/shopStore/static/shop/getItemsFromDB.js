@@ -37,6 +37,9 @@ function wrapData(data, elementToInsertData){
     element.classList.add('col')
     element.classList.add('mb-5')
 
+    element.style.width = 273
+    element.style.height = 345
+
     element.innerHTML = html
     return element
 }

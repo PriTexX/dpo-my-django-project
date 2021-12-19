@@ -28,3 +28,19 @@
 }
 
 /* ----- Filter-Sort Buttons ----- */
+
+@media (min-width: 768px){
+  .row-cols-md-3>* {
+      flex: 0 0 auto;
+      width: 33.3%;
+  }
+}
+
+@media (min-width: 1200px){
+  .row-cols-xl-4>* {
+      flex: 0 0 auto;
+      width: 21%;
+  }
+}
+
+
