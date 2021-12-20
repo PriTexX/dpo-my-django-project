@@ -85,9 +85,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'productshop',
-        'USER': 'root',
+        'USER': 'pritexx',
         'PASSWORD': '230512',
-        'HOST': 'localhost',
+        'HOST': 'pritexx-hpenvy',
         'PORT': '3306',
     }
 }
