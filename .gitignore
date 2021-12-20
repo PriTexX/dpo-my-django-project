@@ -3,3 +3,4 @@
 __pychache__/
 *.pyc
 db.sqlite3
+/shopStore/shopStore/templates/shop/assets/
